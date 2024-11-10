@@ -22,7 +22,6 @@ Partial Class frmLogin
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LogoText = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -31,24 +30,15 @@ Partial Class frmLogin
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.AplicativoEasyBarber.My.Resources.Resources.cancelar
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'LogoText
         '
         Me.LogoText.AutoSize = True
         Me.LogoText.Font = New System.Drawing.Font("Arial", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogoText.Location = New System.Drawing.Point(163, 12)
+        Me.LogoText.Location = New System.Drawing.Point(258, 54)
         Me.LogoText.Name = "LogoText"
         Me.LogoText.Size = New System.Drawing.Size(275, 43)
         Me.LogoText.TabIndex = 2
@@ -59,7 +49,7 @@ Partial Class frmLogin
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(44, 114)
+        Me.Label1.Location = New System.Drawing.Point(144, 191)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(136, 19)
         Me.Label1.TabIndex = 3
@@ -70,7 +60,7 @@ Partial Class frmLogin
         Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox2.ForeColor = System.Drawing.Color.White
-        Me.TextBox2.Location = New System.Drawing.Point(48, 205)
+        Me.TextBox2.Location = New System.Drawing.Point(148, 282)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(509, 19)
         Me.TextBox2.TabIndex = 5
@@ -80,7 +70,7 @@ Partial Class frmLogin
         Me.MaskedTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.MaskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.MaskedTextBox1.ForeColor = System.Drawing.Color.White
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(48, 136)
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(148, 213)
         Me.MaskedTextBox1.Mask = "000.000.000-00"
         Me.MaskedTextBox1.Name = "MaskedTextBox1"
         Me.MaskedTextBox1.Size = New System.Drawing.Size(509, 19)
@@ -90,7 +80,7 @@ Partial Class frmLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(44, 183)
+        Me.Label3.Location = New System.Drawing.Point(144, 260)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(64, 19)
         Me.Label3.TabIndex = 7
@@ -100,7 +90,7 @@ Partial Class frmLogin
         '
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(152, 247)
+        Me.Button1.Location = New System.Drawing.Point(252, 324)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(300, 50)
         Me.Button1.TabIndex = 8
@@ -110,7 +100,7 @@ Partial Class frmLogin
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(135, 342)
+        Me.Label2.Location = New System.Drawing.Point(235, 419)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(229, 18)
         Me.Label2.TabIndex = 9
@@ -122,19 +112,29 @@ Partial Class frmLogin
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Font = New System.Drawing.Font("Arial", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(360, 341)
+        Me.LinkLabel1.Location = New System.Drawing.Point(460, 418)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(105, 19)
         Me.LinkLabel1.TabIndex = 10
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Cadastre-se!"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.AplicativoEasyBarber.My.Resources.Resources.cancelar
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(600, 400)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
@@ -147,9 +147,9 @@ Partial Class frmLogin
         Me.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.White
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.MaximumSize = New System.Drawing.Size(600, 400)
-        Me.MinimumSize = New System.Drawing.Size(600, 400)
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximumSize = New System.Drawing.Size(800, 600)
+        Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "frmLogin"
         Me.Padding = New System.Windows.Forms.Padding(10)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
