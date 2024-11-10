@@ -37,6 +37,7 @@ Partial Class frmCadastro
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -203,12 +204,23 @@ Partial Class frmCadastro
         Me.TextBox3.Size = New System.Drawing.Size(300, 19)
         Me.TextBox3.TabIndex = 20
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("MV Boli", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(355, 782)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(43, 16)
+        Me.Label6.TabIndex = 22
+        Me.Label6.Text = "z style"
+        '
         'frmCadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(400, 800)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label2)
@@ -246,4 +258,5 @@ Partial Class frmCadastro
     Friend WithEvents Label8 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label6 As Label
 End Class

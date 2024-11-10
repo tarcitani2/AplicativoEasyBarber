@@ -143,5 +143,8 @@
   <ItemGroup>
     <None Include="Resources\responder-todos.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbericon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

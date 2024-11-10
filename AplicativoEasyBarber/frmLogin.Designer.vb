@@ -30,7 +30,10 @@ Partial Class frmLogin
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -38,7 +41,7 @@ Partial Class frmLogin
         '
         Me.LogoText.AutoSize = True
         Me.LogoText.Font = New System.Drawing.Font("Arial", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogoText.Location = New System.Drawing.Point(258, 54)
+        Me.LogoText.Location = New System.Drawing.Point(291, 53)
         Me.LogoText.Name = "LogoText"
         Me.LogoText.Size = New System.Drawing.Size(275, 43)
         Me.LogoText.TabIndex = 2
@@ -119,6 +122,26 @@ Partial Class frmLogin
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Cadastre-se!"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("MV Boli", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(726, 569)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(61, 21)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "z style"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.AplicativoEasyBarber.My.Resources.Resources.barbericon
+        Me.PictureBox2.Location = New System.Drawing.Point(234, 42)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(64, 64)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.AplicativoEasyBarber.My.Resources.Resources.cancelar
@@ -135,6 +158,8 @@ Partial Class frmLogin
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
@@ -154,6 +179,7 @@ Partial Class frmLogin
         Me.Padding = New System.Windows.Forms.Padding(10)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LOGIN - EASYBARBER"
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -169,4 +195,6 @@ Partial Class frmLogin
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents Label4 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
