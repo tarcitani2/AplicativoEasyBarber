@@ -28,7 +28,6 @@ Partial Class frmCadastro
         Me.Button1 = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -38,6 +37,7 @@ Partial Class frmCadastro
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -72,7 +72,7 @@ Partial Class frmCadastro
         '
         'Label3
         '
-        Me.Label3.Location = New System.Drawing.Point(23, 10)
+        Me.Label3.Location = New System.Drawing.Point(23, 39)
         Me.Label3.Name = "Label3"
         Me.Label3.Padding = New System.Windows.Forms.Padding(10)
         Me.Label3.Size = New System.Drawing.Size(317, 59)
@@ -112,16 +112,6 @@ Partial Class frmCadastro
         Me.Label2.Size = New System.Drawing.Size(217, 18)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Já tem uma conta de usuário?"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.AplicativoEasyBarber.My.Resources.Resources.responder_todos
-        Me.PictureBox1.Location = New System.Drawing.Point(20, 24)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 13
-        Me.PictureBox1.TabStop = False
         '
         'Label7
         '
@@ -213,6 +203,16 @@ Partial Class frmCadastro
         Me.Label6.Size = New System.Drawing.Size(43, 16)
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "z style"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.AplicativoEasyBarber.My.Resources.Resources.responder_todos
+        Me.PictureBox1.Location = New System.Drawing.Point(20, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
         '
         'frmCadastro
         '
